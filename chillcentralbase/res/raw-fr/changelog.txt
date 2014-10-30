@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <style type='text/css'>
+      a            { color:#556655 }
+      div.title    { 
+          color:#0e167a; 
+          font-size:1.2em; 
+          font-weight:bold; 
+          margin-top:1em; 
+          margin-bottom:0.5em; 
+          text-align:center }
+      div.upgrade    { 
+          color:#b31601; 
+          font-size:1.0em; 
+          font-weight:bold; 
+          margin-top:1em; 
+          margin-bottom:0.5em; 
+          text-align:center }
+      div.subtitle { 
+          color:#334433; 
+          font-size:0.8em; 
+          margin-bottom:1em; 
+          text-align:center }
+      div.freetext { color:#0e167a }
+      div.list     { color:#0e167a }
+    </style>
+  </head>
+  <body bgcolor=#9bb775 >
+$ 2.1
+   % Version 2.1
+ _ 2014-06-07
+	* traduction en allemand
+	* 40% de tous les revenus de la version payante de Chill Central est reverse a des charites ecologiques.
+	* Envoyez vos commentaires a <a href="mailto:support@darnster.co.uk">support@darnster.co.uk</a>
+
+  % Accord de licence de l utilisateur final
+ _ 2013-11-01
+	* Derniere version de l EULA est situee a <a href="http://www.darnster.co.uk/?page_id=10">darnster.co.uk</a>
+	
+  % Credits
+	* Ingenieur principal: D@nny Ruttle
+	* Avec remerciements a <a href= "http://code.google.com/p/android-change-log/">Karsten Priegnitz</a> pour contribute au changement du code utilisateur. 	
+ 	* Un grand merci aussi a la communaute StackOverflow<a href= "http://stackoverflow.com/">StackOverflow</a>. 
+		
+  % &copy; Copyright Darnster Software 2014
+
+  % Fait a Holmfirth, UK
+  % Envoye vos commentaires a <a href="mailto:support@darnster.co.uk">support@darnster.co.uk</a>
+
+
+$ END_OF_CHANGE_LOG
+
+
+  </body>
+</html>
