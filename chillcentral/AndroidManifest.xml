@@ -1,0 +1,127 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.co.darnster.chillcentral"
+    android:versionCode="11"
+    android:versionName="2.1" >
+
+    
+    <supports-screens
+		android:normalScreens="true"
+		android:smallScreens="true"
+		android:largeScreens="false"
+		android:xlargeScreens="false"/>
+    
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+    <!-- PERMISSIONS HERE -->
+	<!-- manifest entries to register and set monitoring service -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- May not require perm below -->
+    <!-- <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" /> -->
+    
+    <!-- Silence ringer -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+	<!--  this is for audio manager settings - only granted to system apps!!!!-->
+	<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/> 
+	
+    <!-- required to to end call Definitely Needed !!! --> 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<!-- leave out until written
+	<uses-permission android:name="android.permission.SEND_SMS" />
+	-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    	<uses-permission android:name="android.permission.READ_CALENDAR" />	
+        
+	<!-- entries below for removing call log entries -->
+	<uses-permission android:name="android.permission.WRITE_CONTACTS" />
+	<uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ButtonStyle" 
+        android:largeHeap="false" 
+        android:allowBackup="true">
+        
+        <!-- UI activities -->
+        <activity
+            android:name="uk.co.darnster.chillcentralbase.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="uk.co.darnster.chillcentralbase.SplashFragment"
+                  android:screenOrientation="portrait"></activity>
+        <activity android:name="uk.co.darnster.chillcentralbase.BlankActivity"
+                  android:screenOrientation="portrait"></activity>
+        <activity android:name="uk.co.darnster.chillcentralbase.FirstRun"
+                  android:screenOrientation="portrait"></activity>
+        <activity android:name="uk.co.darnster.chillcentralbase.AddRuleActivity"
+            	  android:screenOrientation="portrait" ></activity>
+        <activity android:name="uk.co.darnster.chillcentralbase.EditRuleActivity"
+            	  android:screenOrientation="portrait"></activity>
+        <activity android:name="uk.co.darnster.chillcentralbase.TestFragment"
+            	  android:screenOrientation="portrait"></activity>
+        <activity android:name="uk.co.darnster.chillcentralbase.LogFragment"
+            	  android:screenOrientation="portrait"></activity>
+        <activity android:name="uk.co.darnster.chillcentralbase.ConfigFragment"
+                  android:screenOrientation="portrait"></activity>
+        <activity android:name="uk.co.darnster.chillcentralbase.AndroidVersionFailActivity"
+                  android:screenOrientation="portrait"></activity>  
+       	<activity android:name="uk.co.darnster.chillcentralbase.AdminActivity"
+                  android:screenOrientation="portrait"></activity>
+       	<activity android:name="uk.co.darnster.chillcentralbase.FreePackageViolationActivity"
+                  android:screenOrientation="portrait"></activity>
+        <activity android:name="uk.co.darnster.chillcentralbase.ManageFragment"
+                  android:screenOrientation="portrait"></activity>
+       	
+       	
+       	<activity android:name="com.google.ads.AdActivity"
+    			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <!-- Background activities -->
+        <activity android:name="uk.co.darnster.chillcentralbase.CommsHandler"></activity>
+        <activity android:name="uk.co.darnster.chillcentralbase.ContactsHandler"></activity>
+    
+    <!-- SERVICES - NOT REALLY USED IN .SVN VERSION 76 -->
+    <service android:name="uk.co.darnster.chillcentralbase.MonitorService"/> 
+    <!--  hook in to bootstrap completion here and hand off to a service -->
+    
+    <!-- BROADCAST RECEIVERS -->
+    <receiver android:name="uk.co.darnster.chillcentralbase.BootReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+    
+	<receiver android:name="uk.co.darnster.chillcentralbase.SmsReceiver" > 
+		<intent-filter android:priority="10000">
+			<action android:name="android.provider.Telephony.SMS_RECEIVED" /> 
+		</intent-filter> 
+	</receiver>     
+     
+    <receiver android:name="uk.co.darnster.chillcentralbase.PhoneReceiver">
+      <intent-filter android:priority="99999">
+        <action 
+            android:name="android.intent.action.PHONE_STATE" />
+      </intent-filter>
+    </receiver>
+      
+        
+    </application>
+
+</manifest>

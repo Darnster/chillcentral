@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+   	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+    android:background="@drawable/divider_narrow_light"
+	android:orientation="vertical" >
+
+    <!-- start Header --> 
+<!-- start scrolling Body -->
+<ImageView
+		 android:id="@+id/divider_0"
+		 android:layout_width="match_parent"
+		 android:layout_height="3dp"
+		 android:scaleType="fitXY"
+		 android:src="@drawable/divider_narrow_light" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/midgrey" >
+   
+   <ListView
+        android:id="@android:id/list"
+        android:layout_above="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:divider="@drawable/divider_main"
+        >
+
+    </ListView>
+
+<!-- end Scrolling Body -->
+  
+<!-- Start Footer -->
+
+		<RelativeLayout
+		    android:id="@+id/footer"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/footer_height"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:background="@drawable/button_with_rating"
+		    android:gravity="bottom"
+		    android:onClick="rateApp"
+		    android:orientation="horizontal" >
+
+		</RelativeLayout>
+     
+<!-- end Footer -->
+</RelativeLayout>    
+    
+</LinearLayout>
+
+

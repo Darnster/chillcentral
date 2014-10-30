@@ -1,0 +1,246 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_rule_splash"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/divider_narrow_light"
+    android:orientation="vertical" >
+
+    <!-- start Header -->	
+  
+<RelativeLayout 
+    android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/divider_narrow_light" >
+        
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/title_admin"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_narrow"
+        />
+
+	</RelativeLayout>	
+<!-- end Header -->	 
+<!-- start Body -->
+<RelativeLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_below="@id/header">
+
+<RelativeLayout
+   	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:gravity="top"
+	android:background="@color/midgrey">               
+          
+<TextView
+     android:id="@+id/expiryPeriod"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="ExpiryPeriod:   "
+     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<EditText
+    android:id="@+id/expiryPeriodText"
+    android:layout_width="100dp"
+    android:layout_height="25dp"
+    android:layout_toRightOf="@id/expiryPeriod"
+    android:background="@color/bgcolour"
+    android:ems="10"
+    android:maxLines="@integer/TtextBoxSingleLines"
+   android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:text=""
+    android:textColor="@color/darkblue" />
+
+<ImageView
+     android:id="@+id/onePixelMaster"
+     android:layout_width="match_parent"
+     android:layout_height="30dp"
+     android:src="@drawable/onepixel"
+     android:layout_below="@id/expiryPeriod" />
+
+<TextView
+     android:id="@+id/expiryNotify"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Expiry Notify:  "
+     android:layout_below="@id/expiryPeriod"
+     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<EditText
+    android:id="@+id/expiryNotifyText"
+    android:layout_width="100dp"
+    android:layout_height="25dp"
+    android:layout_toRightOf ="@id/expiryNotify"
+    android:layout_below ="@id/expiryPeriodText"
+    android:background="@color/bgcolour"
+    android:ems="10"
+    android:maxLines="@integer/TtextBoxSingleLines"
+   android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:text=""
+    android:textColor="@color/darkblue" />
+
+<ImageView
+     android:id="@+id/onePixelMaster"
+     android:layout_width="match_parent"
+     android:layout_height="30dp"
+     android:src="@drawable/onepixel"
+     android:layout_below="@id/expiryNotify" />
+
+<TextView
+     android:id="@+id/expired"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Expired:            "
+     android:layout_below="@id/expiryNotify"
+     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<EditText
+    android:id="@+id/expiredText"
+    android:layout_width="100dp"
+    android:layout_height="25dp"
+    android:layout_below="@+id/expiryNotifyText"
+    android:layout_toRightOf="@+id/expired"
+    android:background="@color/bgcolour"
+    android:ems="10"
+    android:maxLines="@integer/TtextBoxSingleLines"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:textColor="@color/darkblue" >
+</EditText>
+
+<TextView
+     android:id="@+id/rulesExist"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Rules Exist      "
+     android:layout_below="@id/expired"
+     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<EditText
+    android:id="@+id/rulesExistText"
+    android:layout_width="100dp"
+    android:layout_height="25dp"
+    android:layout_below="@+id/expiredText"
+    android:layout_toRightOf="@+id/rulesExist"
+    android:background="@color/bgcolour"
+    android:ems="10"
+    android:maxLines="@integer/TtextBoxSingleLines"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:textColor="@color/darkblue" >
+</EditText>
+
+ <TextView
+     android:id="@+id/expiryTime"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Expiry Time    "
+     android:layout_below="@id/rulesExist"
+     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<EditText
+    android:id="@+id/expiryTimeText"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_below="@+id/rulesExistText"
+    android:layout_toRightOf="@+id/expiryTime"
+    android:background="@color/bgcolour"
+    android:ems="10"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:textColor="@color/darkblue" >
+</EditText>
+
+
+<EditText
+    android:id="@+id/editTextInput"
+    android:layout_below="@+id/rulesExistText"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_toRightOf="@+id/expiryTime"
+    android:background="@color/bgcolour"
+    android:ems="10"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:textColor="@color/darkblue" >
+
+    <requestFocus />
+</EditText>
+
+<Button
+    android:id="@+id/saveContacts"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/editTextInput"
+    android:layout_below="@+id/editTextInput"
+    android:layout_marginRight="43dp"
+    android:layout_marginTop="60dp"
+    android:onClick="writeContactDetail"
+    android:text="Save contacts" />
+
+
+</RelativeLayout>         
+</RelativeLayout>
+
+<!-- Start Footer -->
+
+
+
+<RelativeLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_alignParentBottom="true" >
+ 		
+	<Button
+	    android:id="@+id/saveConfig"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/footer_height"
+	    android:layout_centerInParent="true"
+	    android:layout_gravity="bottom"
+	    android:onClick="saveSettings"
+	    android:scaleType="fitXY"
+	    android:text="Update Settings"
+	    android:textColor="@android:color/white" />
+    
+</RelativeLayout>
+     
+<!-- end Footer -->
+
+</RelativeLayout>
+
+</LinearLayout>
+
+

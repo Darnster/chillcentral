@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 5dc5d4 midgrey: 889988 7fa251 --> 
+ 
+   <color name="midgrey">#98c261</color>
+   <color name="bgcolour">#c2e494</color>
+   <color name="darkgrey">#334433</color>
+   <color name="darkmidgrey">#556655</color>
+   <color name="darkblue">#0e167a</color>
+   <color name="lightblue">#44f0ff</color>
+   <color name="logogreen">#688640</color>
+   
+   
+</resources>

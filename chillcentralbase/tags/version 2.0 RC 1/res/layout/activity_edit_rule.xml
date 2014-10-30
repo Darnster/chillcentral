@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/midgrey"
+    android:orientation="vertical" >
+
+    <!-- start Header -->	
+    
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/midgrey" >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top"
+            android:paddingBottom="@dimen/padding_2dp"
+            android:paddingTop="3dp"
+            android:text=""
+            android:textSize="@dimen/text_16dp"
+            />
+
+        <ImageView
+            android:id="@+id/header_image"
+            android:layout_below="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:paddingTop="@dimen/padding_2dp"
+            android:src="@drawable/divider_narrow_light" />
+
+	  </RelativeLayout>		
+
+<!-- end Header -->	  
+<!-- start scrolling Body fake text to force rebuild -->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_medium" >
+	  
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/footer"
+            android:layout_gravity="top"
+            android:background="@color/midgrey"
+            android:gravity="top"
+            android:isScrollContainer="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical|none" >
+ 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+<!-- Groups -->
+                <RelativeLayout
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:gravity="top"
+	    	android:background="@color/midgrey">
+                
+            <ImageView
+            android:id="@+id/group_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/group_circle" />
+
+                <Button
+                    android:id="@+id/groupsButton"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/group_image"
+                    android:background="@drawable/button_no_text"
+                    android:hint="@string/chooseGroupHint"
+                    android:text="@string/chooseGroup"
+                    android:textColor="@color/lightblue"
+                    android:textSize="@dimen/text_small"
+                    android:typeface="sans" />
+
+                <ImageView
+		            android:id="@+id/onePixelGroupRight"
+		            android:layout_width="5dp"
+		            android:layout_height="1dp"
+		            android:src="@drawable/onepixel"
+		            android:layout_toRightOf="@id/groupsButton" />
+
+                <CheckBox
+                    android:id="@+id/allCallersCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/allCallers"
+                    android:layout_gravity="bottom"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/onePixelGroupRight"
+                    android:onClick="allCallersHandler"  />
+
+				<ImageView
+		            android:id="@+id/onePixelGroup"
+		            android:layout_width="55dp"
+		            android:layout_height="1dp"
+		            android:src="@drawable/onepixel"
+		            android:layout_below="@id/group_image" />
+                <TextView
+                    android:id="@+id/groupsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/onePixelGroup"
+                    android:layout_below="@id/groupsButton"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/darkblue" />
+                
+		</RelativeLayout>
+                 <!-- End Group -->
+<ImageView
+            android:id="@+id/divider_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider_narrow_light" />                 
+<!-- Calendar -->
+        <RelativeLayout
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:gravity="top"
+	    	android:background="@color/midgrey">
+                
+            <ImageView
+	            android:id="@+id/calendar_image"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:src="@drawable/calendar_circle" />
+
+                <Button
+                    android:id="@+id/calendarButton"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="275dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/calendar_image"
+                    android:background="@drawable/button_no_text"
+                    android:text="@string/chooseCalendar"
+                    android:textColor="@color/lightblue"
+                    android:textSize="@dimen/text_small"
+                    android:typeface="sans" />
+
+                <ImageView
+		            android:id="@+id/onePixelCalendarRight"
+		            android:layout_width="65dp"
+		            android:layout_height="1dp"
+		            android:src="@drawable/onepixel"
+		            android:layout_toRightOf="@id/calendarButton" />
+              <ImageView
+		            android:id="@+id/onePixelCalendar"
+		            android:layout_width="55dp"
+		            android:layout_height="1dp"
+		            android:src="@drawable/onepixel"
+		            android:layout_below="@id/calendar_image" />  
+
+                <TextView
+                    android:id="@+id/calendarTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/calendarButton"
+                    android:layout_toRightOf="@id/onePixelCalendar"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/darkblue" />
+
+			</RelativeLayout>
+<!-- End Calendar -->
+
+
+                <!-- Tag -->
+
+		<ImageView
+            android:id="@+id/divider_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider_narrow_light" />   
+
+ <!-- Tag -->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/midgrey"
+    android:gravity="top"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_medium" >
+
+                <TextView
+                    android:id="@+id/editRuleTagLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="@string/TagLabel"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editRuleTagText"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/editRuleTagLabel"
+                    android:layout_centerInParent="true"
+                    android:background="@color/bgcolour"
+                    android:ems="10"
+                    android:hint="@string/eventTagHint"
+                    android:maxLines="@integer/TtextBoxSingleLines"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text=""
+                    android:textColor="@color/darkblue" >
+
+                    <requestFocus />
+                        
+                    
+                </EditText>
+                <!-- spacer -->
+                <ImageView
+		            android:id="@+id/onePixelTag"
+		            android:layout_width="match_parent"
+		            android:layout_height="20dp"
+		            android:src="@drawable/onepixel"
+		            android:layout_below="@id/editRuleTagText" />
+</RelativeLayout>               
+<RelativeLayout
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:gravity="top"
+	    	android:background="@color/midgrey">               
+                
+                <TextView
+                    android:id="@+id/editRuleScopeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scopeLebel"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <CheckBox
+                    android:id="@+id/callsCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editRuleScopeLabel"
+                    android:checked="true"
+                    android:onClick="callsHandler"
+                    android:text="@string/callsLabel" />
+
+                <CheckBox
+                    android:id="@+id/smsCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/callsCheckBox"
+                    android:onClick="SMSHandler"
+                    android:text="@string/smsLabel" />
+
+<ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_below="@id/smsCheckBox"
+                android:src="@drawable/divider_narrow" />      
+</RelativeLayout>         
+</LinearLayout>          
+
+        </ScrollView>
+<!-- end Scrolling Body -->
+               
+<!-- Start Footer -->
+
+		<RelativeLayout
+		    android:id="@+id/footer"
+		    android:layout_width="match_parent"
+		    android:layout_height="45dp"
+		    android:layout_alignParentBottom="true"
+		    android:background="@color/midgrey"
+		    android:gravity="bottom|center"
+		    android:orientation="horizontal" >
+  
+               <Button
+                   android:id="@+id/editRuleCancel"
+                   android:layout_width="90dp"
+                   android:layout_height="@dimen/footer_height"
+                   android:background="@drawable/button_no_text"
+                   android:onClick="cancelEdit"
+                   android:text="@android:string/cancel"
+                   android:textColor="@color/lightblue"
+                   android:textSize="@dimen/text_16dp" />
+               
+               <Button
+                   android:id="@+id/editRuleSaveRule"
+                   android:layout_width="90dp"
+                   android:layout_height="@dimen/footer_height"
+                   android:layout_centerHorizontal="true"
+                   android:layout_toRightOf="@id/editRuleCancel"
+                   android:background="@drawable/button_no_text"
+                   android:onClick="saveRule"
+                   android:text="@string/SaveRule"
+                   android:textColor="@color/lightblue"
+                   android:textSize="@dimen/text_16dp" />
+
+            <Button
+                android:id="@+id/editRuleDeleteRule"
+                android:layout_width="110dp"
+                android:layout_height="@dimen/footer_height"
+                android:layout_toRightOf="@id/editRuleSaveRule"
+                android:background="@drawable/button_no_text"
+                android:onClick="deleteRule"
+                android:text="@string/deleterule"
+                android:textColor="@color/lightblue" />
+
+             </RelativeLayout>  
+</RelativeLayout> 
+</LinearLayout>

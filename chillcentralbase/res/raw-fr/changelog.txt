@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style type='text/css'>
+      a            { color:#556655 }
+      div.title    { 
+          color:#0e167a; 
+          font-size:1.2em; 
+          font-weight:bold; 
+          margin-top:1em; 
+          margin-bottom:0.5em; 
+          text-align:center }
+      div.upgrade    { 
+          color:#b31601; 
+          font-size:1.0em; 
+          font-weight:bold; 
+          margin-top:1em; 
+          margin-bottom:0.5em; 
+          text-align:center }
+      div.subtitle { 
+          color:#334433; 
+          font-size:0.8em; 
+          margin-bottom:1em; 
+          text-align:center }
+      div.freetext { color:#0e167a }
+      div.list     { color:#0e167a }
+    </style>
+  </head>
+  <body bgcolor=#9bb775 >
+$ 2.2
+   % Version 2.2
+ _ 2014-07-05
+* Darnster Software LLP cesseront d\'être négociées le 15 Août 2014 et demande que tous les utilisateurs Chill centrale désinstaller l\'application à votre meilleure convenance. 
+* Darnster offre un remboursement à tous les utilisateurs qui ont payé pour cette application et offriront une version sans licence de l\'App pour les utilisateurs existants. 
+* Les utilisateurs qui souhaitent recevoir une licence (et le soutien) version gratuite Chill centrale devraient communiquer avec <a href="mailto:support@darnster.co.uk"> support@darnster.co.uk </ a> avant le 5 Août 2014 .
+
+  % Accord de licence de l utilisateur final
+ _ 2014-07-05
+	* Derniere version de l EULA est situee a darnster.co.uk.
+	
+  % Credits
+	* Avec remerciements a <a href= "http://code.google.com/p/android-change-log/">Karsten Priegnitz</a> pour contribute au changement du code utilisateur. 	
+ 	* Un grand merci aussi a la communaute StackOverflow<a href= "http://stackoverflow.com/">StackOverflow</a>. 
+		
+  % &copy; Copyright Darnster Software 2014
+
+  % Fait a Holmfirth, UK
+  % Envoye vos commentaires a <a href="mailto:support@darnster.co.uk">support@darnster.co.uk</a>
+
+
+$ END_OF_CHANGE_LOG
+
+
+  </body>
+</html>

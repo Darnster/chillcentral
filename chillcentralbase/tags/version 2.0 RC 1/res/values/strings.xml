@@ -1,0 +1,262 @@
+<resources>
+       
+    <string name="app_name">Chill Central</string>
+    <string name="app_name_action_bar">Chill Central</string>
+    <string name="splash_title">Welcome</string>
+    <string name="action_settings">Action Settings</string>
+
+    <!--  CommsHandler -->
+	<string name="Unknown_Callers">Unknown Callers</string>
+    
+	<!-- Calendar Handler -->
+	<string name="cal_pc_sync">PC Sync</string>
+    <string name="cal_tasks">Tasks</string>
+    <string name="cal_people">People</string>
+    
+    <!-- Group Handler -->
+	<string name="grp_my_contacts">My Contacts</string>
+    <string name="grp_frequent_contacts">Frequent Contacts</string>
+    <string name="grp_contacts">Contacts</string> 
+    
+    <!-- END Non activity classes -->
+    
+    <!-- Exception error strings -->
+  	<string name="err_unable_to_connect_to_database">Error - could not connect to database.</string>
+    <!-- Non activity classes -->
+    <!--  PhoneReceiver -->
+    <string name="unable_to_pass_call_to_handler">Unable to pass voice call to handler.</string>
+    <string name="unable_to_access_incomming_number">Unable to access incomming number.</string>
+	<string name="unable_to_access_telephony_service">Unable to access telephony service.</string>
+	<!--  SMSReceiver -->
+    <string name="unable_to_pass_sms_to_handler">Unable to pass SMS to handler.</string>
+  	
+    <!-- Menus -->
+	<string name="menu_config">Config</string> 
+	<string name="menu_view_logs">View Logs</string> 
+	<string name="menu_test">Test</string> 
+	<string name="menu_tips_tricks">Tips \u0026 Tricks</string> 
+	<string name="menu_about">About</string> 
+	<string name="menu_add_rule">Add Rule</string> 
+	<string name="menu_exit">Exit</string> 
+    
+	<!-- dialogs - Including Titles and literal buttons -->
+	<string name="about">About Chill Central</string>
+	<string name="OK">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="close_wp">Close</string>
+	
+
+	<!-- Calendar -->
+	<string name="choose_calendar">Choose a Calendar.</string>
+	<!-- End Dialogs-->
+     
+    <!--<string name="app_message">App Message</string>
+    <string name="intent_registered">Listen Intent Registered</string> 
+    <string name="callStartmonitor">Call Start Monitor</string> -->
+    
+    <!-- Activity Titles -->
+    <string name="title_activity_splash">Chill Central</string>
+    <string name="title_activity_main">Chill Central</string>
+ 	<string name="title_add_rule">Add Rule</string>
+    <string name="title_edit_rule">Edit Rule</string>
+    <string name="rules_main">Manage Rules</string>
+    <string name="title_config">Configuration</string>
+    <string name="title_test">Test Call Blocking</string>
+    <string name="title_tips_tricks">Tips \u0026 Tricks</string>
+    <string name="title_admin">Admin Console</string>
+    <string name="audit_log">Blocked Comms Log</string>
+    
+    <!-- Master config -->
+    <string name="master_app_control">App Control</string>
+    <string name="master_enable_hint">This option enables or disables blocking.</string>
+    <string name="master_enable">Enable Blocking</string>
+    <string name="master_notify">Notify blocked communications</string>
+    <string name="app_options">App Options</string>
+    <string name="remove_from_call_log">Remove blocked calls from call log</string>
+    <string name="enable_device_logging_for_this_session">Enable device logging for this session</string>
+    <string name="default_test_number">Change phone number for rule tests</string>
+    <string name="saveConfig">Save App Configuration</string>
+    <string name="config_settings_saved">Configuration Settings Saved</string>  
+    <string name="test_number">666</string>
+    
+    
+    <!-- Test strings -->
+    <string name="testNumber">Test Number</string>
+    <string name="testNumberHint">enter phone number</string>
+    <string name="test_no_matching_rules">Sorry - no matching rules found for the number provided.</string>
+    <string name="enter_phone_number">Enter Phone Number:</string>
+    <string name="matched_rule">The number provided matches the following rule:</string>   
+
+    <!-- Rule config -->
+    <!-- Groups -->
+    <string name="groupLabel">group:</string>
+    <string name="chooseGroup">Choose Group(s)</string>
+    <string name="grpNotSet">Group not set</string>
+ 	<string name="chooseGroups">Choose one or more Groups.</string>
+    <string name="chooseGroupHint">Click to select the Groups which apply to this rule</string>
+    <string name="favouritesSubstitute">Favourites</string> 
+    <string name="allCallers">All Callers</string> 
+         
+    <!--  Calendar -->
+    <string name="CalendarLabel">Calendar:</string>
+    <string name="chooseCalendar">Choose Calendar</string>
+    <string name="calendarNotSet">Calendar not set</string>
+
+    <!-- Tag -->
+    <string name="TagLabel">Event Tag:</string>
+    <string name="tagText">Tag:</string>
+    <string name="eventTagHint">Enter event title from calendar event.</string>
+
+    <!-- Scope -->
+    <string name="scopeLebel">Block Scope:</string>
+    <string name="callsLabel">Calls</string>
+    <string name="smsLabel">SMS</string>
+    <string name="actionLabel">BlockAction:</string>
+    <string name="blockOnlyLabel">Block Only</string>
+    <string name="blockVoiceMailLabel">Block and send to Voicemail</string>
+    <string name="OutofOfficeLabel">Send out of office SMS</string>
+    <string name="active_rule_found">Active Rule Found!</string>
+	
+	<!-- END Rule config -->
+     
+    <!-- Rule CRUD -->
+    <string name="AddRule">Add Rule</string>
+	<string name="rule_added">Rule added successfully.</string>
+    <string name="SaveRule">Save Rule</string>
+    <string name="editRule">Edit Rule</string>
+    <string name="deleteRule">Delete Rule</string>
+    <string name="deleteRuleConfirm">The selected rule will be deleted.</string>
+    <string name="deleteAllRules">Delete All Rules</string>
+    <string name="deleteAllRulesConfirm">Are you sure you want to delete ALL Rules</string>
+    <string name="deleterule">Delete Rule</string>
+
+	<!-- DeleteLogDialogFragment -->
+    <string name="confirm_log_delete">Confirm Log Delete</string>
+    <string name="delete">Delete</string>
+    <string name="log_question_mark">log?</string>
+	
+	<!-- Delete Rule -->
+    <string name="rule_delete">Rule delete</string>
+    <string name="rule_delete_question_mark">Delete this Rule?</string>
+	
+	<!-- EditRule -->
+    <string name="unable_to_determine_rule">Unable to determine rule - please try again.</string>
+    <string name="no_group_selected">No group selected - please try again.</string>
+    <string name="no_calendar_selected">No calendar selected - please try again.</string>
+	<string name="rule_update_success">Rule updated successfully.</string>	
+	
+	<!-- Rule validation messages-->
+    <string name="rule_no_group_selected">Please select one or more Groups</string>
+    <string name="rule_no_calendar_selected">Please select a Calendar</string>
+    <string name="rule_no_event_tag">Please enter an Event Tag</string>
+    <string name="rule_event_tag_white_space">Event Tag must include alphanumeric characters</string>
+    <string name="rule_event_tag_too_short">Event Tag MUST be at least 3 characters</string>
+	<string name="rule_call_block_not_checked">Calls MUST be selected</string>
+
+    <string name="splash_rules_button_text">Rules</string>
+    <string name="splash_config_button_text">Config</string>
+    <string name="splash_log_button_text">Logs</string>
+    <string name="splash_test_button_text">Test</string>
+        
+    <!-- notification strings -->
+    <string name="notification_title">Chill Central blocked comms notification</string>
+    <string name="notification_content">Open Chill Central</string>
+    <string name="notification_ticker">You have blocked comms to review</string>
+    
+    
+    <!-- audit log -->
+    <string name="call_logs">Calls</string>
+    <string name="sms_logs">SMS</string>
+    <string name="blocked_logs_title">Blocked Comms Logs</string>
+    <string name="clear_call_log">Clear Call Log</string>
+    <string name="clear_sms_log">Clear SMS Log</string>
+    <string name="no_sms_content">No Content!</string>
+    <!-- Days of the week -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">sunday</string>
+    <!-- time of day -->
+    <string name="AM">AM</string>
+    <string name="PM">PM</string>
+    
+    <!-- Tips Tricks -->
+    <string name="tip_title">Tip Title</string>
+    
+    <!-- Incompatible Version log -->
+    <string name="android_compatability_error_title">Android Compatibility Error</string>
+    <string name="android_compatability_error_message">Sorry - your device is unable to run this App.  Chill Central requires Ice Cream Sandwich or later.</string>
+
+    <!-- FreePackageViolationStrings -->
+    <string name="free_package_violation_error_title">Detected Free Version</string>
+    <string name="free_package_violation_error_message">Chill Central has detected that the free version still appears to be installed on your device.  
+        Please uninstall the free version and try again.\nApologies for any inconvenience.</string>
+    <string name="free_package_violation_mailto_message">
+      If you are still having problems with installation after removing the free version, please contact: &lt;a href=\"mailto:support@darnster.co.uk\">support@darnster.co.uk&lt;\/a&gt;.
+    </string>  
+ 	<string name="free_package_violation_sla_message">
+      SLAs for support requests are documented in the EULA at &lt;\/br&gt;&lt;a href=\"http://www.darnster.co.uk\">www.darnster.co.uk&lt;\/a>.
+    </string>
+    
+	<!-- KillDialogFrag -->
+	<string name="exit">Exit</string>
+	<string name="app_close">Are you sure you want to close</string>
+
+	<!-- ChangeLog -->
+	<string name="changelog_full_title">Change Log</string>
+    <string name="changelog_title">What\'s New</string>
+    <string name="changelog_ok_button">OK</string>
+    <string name="changelog_show_full">more...</string> 
+   
+   <!-- styles -->
+ 
+  <!-- splash -->
+  <string name="splashMessageOne">Oh No!</string>
+  <string name="splashMessageTwo">You don\'t have any rules defined!</string>
+  <string name="splashMessageThree">Take control - add a rule and Chill!</string>
+      
+  <!-- Tips & Tricks --> 
+  
+  <string name="tip1title">Welcome</string>
+  <string name="tip1detail">Chill Central stops people from contacting you when you need to switch off - be that from work, family or friends. 
+      It is particularly useful if you are an employee and use your own device for work where your employer supports 
+      BYOD (Bring Your Own Device), or if you are self employed and don\'t want to shell out for a second phone for personal use. 
+      The philosophy has been to take advantage of functions that Google has already included in modern Android phones, Phone Groups and Calendars in particular. 
+      Chill Central builds on these features allowing simple blocking rules to be created based around your work/life schedules with minimal effort. 
+	  There are lots of apps out there which offer a wider range of features, but none offer the same level of simplicity as Chill Central.</string>
+  <string name="tip2title">Overview</string>
+  <string name="tip2detail">Use the \"Manage Rules\" screen to configure how you want to block callers, 
+      based on three pieces of information:\r\n
+      1. One or more system groups on your phone (e.g. Coworkers, Family or Friends).\r\n
+      2. Choose which calendar (e.g. Work, Google Calendar or a Calendar you subscribe via Google).\r\n
+      3. Finally enter an Event Tag  which is an the Title of an Event entry in the selected Calendar.\r\n
+      If a call or SMS arrives and matches all criteria (i.e. the caller is in a matching group and there is an active 
+      Calendar event with the specified Tag) the call and/or SMS will be blocked.</string>
+  <string name="tip3title">Group Behaviour</string>
+  <string name="tip3detail">One or more Groups (Phone groups, Google groups and the "Unknown" group) can be included in a single rule.  
+		However each Group can only appear in exactly one rule.  You will notice that the list of available Groups 
+		reduces each time a Group is selected when creating a rule.\r\n
+		***Note*** selecting the All Callers option instead of individual groups 
+		doesn\'t have any effect on Groups that can be selected for other rules.</string>
+  <string name="tip4title">Testing Rules</string>
+  <string name="tip4detail">The test screen allows active rules to be tested. 
+      This requires the user to enter a number used for testing.  The factory setting for this is 666 but the default value 
+      can be changed in the configuration screen. The test will confirm whether a particular user is blocked based on any active rules 
+      and provides information about the particular rule which blocked the user.
+      </string>
+  <string name="tip5title">App Configuration</string>
+  <string name="tip5detail">This screen allows the user to set a number of options. 
+      These include master on/off, whether a notification icon appears if an incomming 
+      communication has been blocked, removal of blocked calls from the phone call list, 
+      enabling or disabling device logging (for support requests only) and changing the 
+      default number used for testing call rules. 
+      </string>
+ <string name="tip6title">End User Licence Agreement</string>
+ <string name="tip6detail">The latest version of the EULA is located at chillcentral.co.uk.  You will be informed via an entry in the ChangeLog which accompanies any
+      update to the App if the terms and conditions are updated.</string> 
+    
+    
+</resources>

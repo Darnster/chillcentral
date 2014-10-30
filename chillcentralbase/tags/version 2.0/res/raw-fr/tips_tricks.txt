@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <style type='text/css'>
+      a            { color:#556655 }
+      div.title    { 
+          color:#0e167a; 
+          font-size:1.2em; 
+          font-weight:bold; 
+          margin-top:1em; 
+          margin-bottom:0.5em; 
+          text-align:center }
+      div.subtitle { 
+          color:#334433; 
+          font-size:0.8em; 
+          margin-bottom:1em; 
+          text-align:center }
+      div.freetext { color:#0e167a }
+      div.list     { 
+      	  color:#0e167a;
+      	  font-size:0.9em;
+      	 }
+    </style>
+  </head>
+  <body bgcolor=#9bb775 >
+  % Bienvenue 
+	* Swipé a gauche pour les paramètres de CONFIGURATION.
+	* Swipé a droite pour voir le register des COMMUNICATIONS BLOQUEES.
+	* Swipé a droite encore pour TESTER LES APPELS BLOQUES.
+	* Chill Central utilise des règles simples pour lire les evénements du calendrier et filtrer les appels reçus et SMS et utilise les traits inclus dans la technologie des telephones Android, comme les calendrierset les groupes Google, i.e une règle peut-etre créer pour bloquer des appels du groupe de vos collegues s il y a une entrée active dans un calendrier specifique intitule: vacances ou Week-End. Les utilisateurs peuvent faire le changement et n’utiliser qu’un seul telephone pour le travail et personnelement, ceci en controllant qui peut et ne peut pas les contacter base sur leur routines journalières et plus important, ne garder qu’un seul telephone chargé ce qui est meilleur pour l’environement!
+	* C est particulierement utile si vous etre un employe et que vous utilise votre appareil personnelau travail avec l accord de votre employeur BYOD (Bring Your Own Device), ou si vous etes a votre compte et ne voulez pas payer pour un autre telephone pour votre usage personnel.
+  % Apercu
+	* Utiliser le "Regles de gestion" ecran d avis, comment bloquer les appels, base sur 3 informations:
+    * 1. Un ou plusieurs groupes de systemes sur votre telephone (e.g. Collegues, Famille or Amis).
+    * 2. Choisissez un calendrier (e.g. Travail, Calendrier Google ou un Calendrier souscris via Google).
+    * 3. Enfin selectionner un  onglet Evenement qui est une entrée evenement dans le calendrier selectionne.
+    * Si un appel ou un SMS arrive et  repond a tous les criteres(ie l’appel est compris dans le groupe et est active) L evenement avec un onglet specifique, l appel et/ou le SMS sera bloque.
+  % Comportement du groupe
+  	* Un ou plusieurs groupes (groupes telephone, groupes Google et "Pas connu" groupe) peut etre inclus en une seule regle.  
+	* Cependant chaque groupe ne peut etre que dans une regle uniquement. Vous remarquez que la liste des groupes disponibles reduit a chaque fois qu un groupe est selectionne quand la rule est creee.
+  % Essais des regles
+	* L essai  ecran permet aux regles actives d etre testees. 
+    * Cela implique que l utilisateur entre un numero utilise pour l essai.
+    * Le reglage d usine pour cela est 666 mais la valeur defaut peut etre change lors de la configuration de l ecran.
+    * L essai confirmera si un utilisateur specifique est bloque base sur n importe quelles regles actives et  fourni une information  a propos d une regle qui est bloquee par l utilisateur
+  % App Configuration
+    * Cet ecran permet  a l utilisateur de definer un certains nombres de choix. Cela inclus
+    * principalement on/off
+    * si une icone d avis apparait
+    * si un appel arrivant a ete bloquee, l enlevement des appels bloques de la liste telephonique
+    * permet ou non la connection du l appareil (pour les demandes d aide seulement) et changer le numero de defaut utilise pour les essais des regles des appels.
+  % Licence de Contrat de l utilisatuer final
+	* La derniere version de l EULA est situe a chillcentral.co.uk. Vous serez informer par une entrée dans le changement de connection qui est associe avec toutes mises a jour de l application si les termes et conditions sont mise a jour.
+
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<resources>
+       
+    <string name="app_name">Chill Central</string>
+    <string name="app_name_action_bar">Chill Central</string>
+    <string name="splash_title">Willkommen</string>
+
+    <!--  CommsHandler -->
+	<string name="Unknown_Callers">Unbekannter Anrufer</string>
+    
+	<!-- Calendar Handler -->
+	<string name="cal_pc_sync">PC Sync</string>
+    <string name="cal_tasks">Aufgaben</string>
+    <string name="cal_people">Menschen</string>
+    
+    <!-- Group Handler -->
+	<string name="grp_my_contacts">Meine Kontakte</string>
+    <string name="grp_frequent_contacts">Häufige Kontakte</string>
+    <string name="grp_contacts">Kontakte </string> 
+    
+    <!-- END Non activity classes -->
+    
+    <!-- Exception error strings -->
+  	<string name="err_unable_to_connect_to_database">Fehler - konnte nicht zur Datenbank verbinden.</string>
+    <!-- Non activity classes -->
+    <!--  PhoneReceiver -->
+    <string name="unable_to_pass_call_to_handler">Unfähig, Sprachanruf an-Handler übergeben.</string>
+    <string name="unable_to_access_incomming_number">Kann nicht incomming Nummer zugreifen.</string>
+	<string name="unable_to_access_telephony_service">Unfähig, Telefonie-Dienst zugreifen.</string>
+	<!--  SMSReceiver -->
+    <string name="unable_to_pass_sms_to_handler">Unfähig, SMS-Handler übergeben.</string>
+	
+    <!-- Menus -->
+	<string name="menu_config">Konfig</string> 
+	<string name="menu_view_logs">Protokolle anzeigen</string> 
+	<string name="menu_test">Test</string> 
+	<string name="menu_tips_tricks">Tipps und Tricks</string> 
+	<string name="menu_about">Über</string> 
+	<string name="menu_add_rule">Regel hinzufügen</string> 
+	<string name="menu_exit">Beenden</string> 
+    
+	<!-- dialogs - Including Titles and literal buttons -->
+	<string name="about">Über Chill Central</string>
+	<string name="OK">OK</string>
+	<string name="cancel">Stornieren</string>
+	<string name="close_wp">schließen</string>
+	
+
+	<!-- Calendar -->
+	<string name="choose_calendar">Wählen Sie einen Kalender.</string>
+	<!-- End Dialogs-->
+     
+    <!--<string name="app_message">App Message</string>
+    <string name="intent_registered">Listen Intent Registered</string> 
+    <string name="callStartmonitor">Call Start Monitor</string> -->
+    
+    <!-- Activity Titles -->
+    <string name="title_activity_splash">Chill Central</string>
+    <string name="title_activity_main">Chill Central</string>
+ 	<string name="title_add_rule">Regel hinzufügen</string>
+    <string name="title_edit_rule">Regel bearbeiten</string>
+    <string name="rules_main">Regeln verwalten</string>
+    <string name="title_config">Konfiguration</string>
+    <string name="title_test">Test-Anruf-Blockierung</string>
+    <string name="title_tips_tricks">Tipps und Tricks</string>
+    <string name="title_admin">Admin-Konsole</string>
+    <string name="audit_log">Blockierte Comms Anmelden</string>
+    
+    <!-- Master config -->
+    <string name="master_app_control">App-Steuerung</string>
+    <string name="master_enable_hint">Diese Option aktiviert oder deaktiviert die Sperrung.</string>
+    <string name="master_enable">Aktivieren Sperr</string>
+    <string name="master_notify">Benachrichtigen Sie blockiert die Kommunikation</string>
+    <string name="app_options">App-Optionen</string>
+    <string name="remove_from_call_log">Blockiert Anrufe aus der Anrufliste entfernen</string>
+    <string name="enable_device_logging_for_this_session">Aktivieren Gerät Protokollierung für diese Sitzung</string>
+    <string name="default_test_number">Das Handy-Nummer für Regeltests</string>
+    <string name="saveConfig">App-Konfiguration speichern</string>
+    <string name="config_settings_saved">Konfigurationseinstellungen Gespeichert</string>  
+    <string name="test_number">666</string>
+    
+    
+    <!-- Test strings -->
+    <string name="testNumber">Test Nr.</string>
+    <string name="testNumberHint">geben Sie die Telefonnummer</string>
+    <string name="test_no_matching_rules">Entschuldigung - keine passenden Regeln für die angegebene Nummer gefunden.</string>
+    <string name="enter_phone_number">Geben Sie Telefonnummer:</string>
+    <string name="matched_rule">Die Zahl versehen passt die folgende Regel:</string>   
+
+    <!-- Rule config -->
+    <!-- Groups -->
+    <string name="groupLabel">gruppe:</string>
+    <string name="chooseGroup">Wählen Sie Gruppe(n)</string>
+    <string name="grpNotSet">Gruppe nicht gesetzt</string>
+ 	<string name="chooseGroups">Wähle eine oder mehrere Gruppen.</string>
+    <string name="chooseGroupHint">Klicken Sie auf die Gruppen, die auf diese Regel angewendet wählen</string>
+    <string name="favouritesSubstitute">Favoriten</string> 
+    <string name="allCallers">Alle Anrufer</string> 
+         
+    <!--  Calendar -->
+    <string name="CalendarLabel">Kalender:</string>
+    <string name="chooseCalendar">Wählen Sie Kalender</string>
+    <string name="calendarNotSet">Kalender nicht gesetzt</string>
+
+    <!-- Tag -->
+    <string name="TagLabel">Event-Anhänger:</string>
+    <string name="tagText">Anhänger:</string>
+    <string name="eventTagHint">Titel der Veranstaltung - Kalender</string>
+
+    <!-- Scope -->
+    <string name="scopeLebel">Blockbereich:</string>
+    <string name="callsLabel">Anrufe</string>
+    <string name="smsLabel">SMS</string>
+    <string name="actionLabel">Block-Aktion:</string>
+    <string name="blockOnlyLabel">Nur blockieren</string>
+    <string name="blockVoiceMailLabel">Sperren und senden an Voicemail</string>
+    <string name="OutofOfficeLabel">Aus dem Amt SMS senden</string>
+    <string name="active_rule_found">Aktive Regel gefunden!</string>
+	
+	<!-- END Rule config -->
+     
+    <!-- Rule CRUD -->
+    <string name="AddRule">Regel hinzufügen</string>
+	<string name="rule_added">Regel erfolgreich hinzugefügt.</string>
+    <string name="SaveRule">Sparen Regel</string>
+    <string name="editRule">Regel bearbeiten</string>
+    <string name="deleteRule">Regel löschen</string>
+    <string name="deleteRuleConfirm">Die ausgewählte Regel wird gelöscht.</string>
+    <string name="deleteAllRules">Löschen aller Regeln</string>
+    <string name="deleteAllRulesConfirm">Sind Sie sicher, dass Sie alle Regeln löschen möchten</string>
+    <string name="deleterule">Regel löschen</string>
+
+	<!-- DeleteLogDialogFragment -->
+    <string name="confirm_log_delete">Bestätigen Protokoll löschen</string>
+    <string name="delete">Löschen</string>
+    <string name="log_question_mark">protokollieren?</string>
+	
+	<!-- Delete Rule -->
+    <string name="rule_delete">Regel löschen</string>
+    <string name="rule_delete_question_mark">Löschen Sie diese Regel?</string>
+	
+	<!-- EditRule -->
+    <string name="unable_to_determine_rule">Nicht ausschließen bestimmen - bitte versuchen Sie es erneut.</string>
+    <string name="no_group_selected">Keine Gruppe ausgewählt - bitte versuchen Sie es erneut.</string>
+    <string name="no_calendar_selected">Kein Kalender ausgewählt - bitte versuchen Sie es erneut.</string>
+	<string name="rule_update_success">Regel erfolgreich aktualisiert.</string>	
+	
+	<!-- Rule validation messages-->
+    <string name="rule_no_group_selected">Bitte wählen Sie eine oder mehrere Gruppen</string>
+    <string name="rule_no_calendar_selected">Bitte wählen Sie einen Kalender</string>
+    <string name="rule_no_event_tag">Bitte geben Sie eine Event-Anhänger</string>
+    <string name="rule_event_tag_white_space">Event-Anhänger muss alphanumerische Zeichen</string>
+    <string name="rule_event_tag_too_short">Event-Anhänger muss mindestens 3 Zeichen lang sein</string>
+	<string name="rule_call_block_not_checked">Anrufe müssen ausgewählt werden</string>
+
+    <string name="splash_rules_button_text">Regeln</string>
+    <string name="splash_config_button_text">Konfig</string>
+    <string name="splash_log_button_text">Protokolle</string>
+    <string name="splash_test_button_text">Test</string>
+        
+    <!-- notification strings -->
+    <string name="notification_title">Chill Central blockiert Comms Benachrichtigung</string>
+    <string name="notification_content">Offene Chill Central</string>
+    <string name="notification_ticker">Sie haben Comms zu überprüfen blockiert</string>
+    
+    
+    <!-- audit log -->
+    <string name="call_logs">Anrufe</string>
+    <string name="sms_logs">SMS</string>
+    <string name="blocked_logs_title">Blockierte Comms Protokolle</string>
+    <string name="clear_call_log">Klar Anrufprotokoll</string>
+    <string name="clear_sms_log">Klar SMS Anmelden</string>
+    <string name="no_sms_content">Kein Inhalt!</string>
+    <!-- Days of the week -->
+    <string name="monday">Montag</string>
+    <string name="tuesday">Dienstag</string>
+    <string name="wednesday">Mittwoch</string>
+    <string name="thursday">Donnerstag</string>
+    <string name="friday">Freitag</string>
+    <string name="saturday">Samstag</string>
+    <string name="sunday">Sonntag</string>
+    <!-- time of day -->
+    <string name="AM">AM</string>
+    <string name="PM">PM</string>
+    
+    <!-- Tips Tricks -->
+    <string name="tip_title">Tipp Titel</string>
+    
+    <!-- Incompatible Version log -->
+    <string name="android_compatability_error_title">Android Compatibility Fehler</string>
+    <string name="android_compatability_error_message">Entschuldigung - ist das Gerät nicht in der Lage, diese App laufen. Chill Central erfordert Ice Cream Sandwich oder höher.</string>
+
+    <!-- FreePackageViolationStrings -->
+    <string name="free_package_violation_error_title">Erkannt kostenlos Version</string>
+    <string name="free_package_violation_error_message">Chill Central hat erkannt, dass die kostenlose Version scheint immer noch auf dem Gerät installiert werden.         Bitte deinstallieren Sie die kostenlose Version und erneut versuchen. \nApologies für die Unannehmlichkeiten.</string>
+    <string name="free_package_violation_mailto_message">Wenn Sie immer noch Probleme mit der Installation nach dem Entfernen der kostenlosen Version mit, kontaktieren Sie bitte: &lt;a href=\"mailto:support@darnster.co.uk\">support@darnster.co.uk&lt;\/a&gt;.
+    </string>  
+ 	<string name="free_package_violation_sla_message">SLAs für Support-Anfragen werden in der EULA &lt;\/br&gt;&lt;a href=\"http://www.darnster.co.uk\">www.darnster.co.uk&lt;\/a&gt; dokumentiert.</string>
+    
+	<!-- KillDialogFrag -->
+	<string name="exit">Beenden</string>
+	<string name="app_close">Sind Sie sicher, dass Sie schließen möchten</string>
+
+	<!-- ChangeLog -->
+	<string name="changelog_full_title">Änderungsprotokoll</string>
+    <string name="changelog_title">Das ist neu</string>
+    <string name="changelog_ok_button">OK</string>
+    <string name="changelog_show_full">mehr...</string> 
+   
+   <!-- styles -->
+ 
+  <!-- splash -->
+  <string name="splashMessageOne">Oh Nein!</string>
+  <string name="splashMessageTwo">Sie haben keine Regeln definiert!</string>
+  <string name="splashMessageThree">Übernimm die Kontrolle - fügen Sie eine Regel und Chill!</string>
+  
+  <string name="upgrade_title">Bitte deinstallieren</string>
+    <!-- New content -->
+  	<string name="upgrade_message">Darnster Software LLP wird am 15. August 2014 nicht mehr gehandelt und fordert, dass alle Benutzer des Chill-Zentral die Applikation deinstallieren bei nächster Gelegenheit. Darnster bietet eine lizenzfreie Version der App vorhandenen Benutzern. Diejenigen Nutzer, die eine Lizenz (und Unterstützung) kostenlose Version von Chill-Zentral erhalten wenden support@darnster.co.uk vor 5. August 2014.
+  </string>
+  
+</resources>
