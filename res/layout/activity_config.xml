@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_rule_splash"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/divider_narrow_light"
+    android:orientation="vertical" >
+
+    <!-- start Header -->	
+  
+<RelativeLayout 
+    android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/divider_narrow_light" >
+        
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/title_config"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_narrow"
+        />
+
+	</RelativeLayout>	
+<!-- end Header -->	 
+<!-- start Body -->
+<RelativeLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_below="@id/header">
+
+<RelativeLayout
+   	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:gravity="top"
+	android:background="@color/midgrey">               
+          
+<TextView
+     android:id="@+id/masterAppControl"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/master_app_control"
+     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<!-- Start checkboxes -->
+<CheckBox
+    android:id="@+id/masterEnable"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/masterAppControl"
+    android:checked="true"
+    android:onClick="handleEnable"
+    android:text="@string/master_enable" />
+
+<ImageView
+     android:id="@+id/onePixelMaster"
+     android:layout_width="match_parent"
+     android:layout_height="10dp"
+     android:src="@drawable/onepixel"
+     android:layout_below="@id/masterEnable" />
+
+
+<CheckBox
+     android:id="@+id/masterNotify"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/onePixelMaster"
+     android:checked="true"
+     android:text="@string/master_notify" />
+ 
+<ImageView
+     android:id="@+id/onePixelMaster2"
+     android:layout_width="match_parent"
+     android:layout_height="10dp"
+     android:src="@drawable/onepixel"
+     android:layout_below="@id/masterNotify" />
+
+<CheckBox
+     android:id="@+id/removeFromCallLog"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/onePixelMaster2"
+     android:checked="true"
+     android:text="@string/remove_from_call_log" />
+
+<ImageView
+     android:id="@+id/onePixelMaster3"
+     android:layout_width="match_parent"
+     android:layout_height="10dp"
+     android:src="@drawable/onepixel"
+     android:layout_below="@id/removeFromCallLog" />
+
+<CheckBox
+     android:id="@+id/enableDeviceLogging"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/onePixelMaster3"
+     android:checked="true"
+     android:text="@string/enable_device_logging_for_this_session" />
+
+<ImageView
+     android:id="@+id/onePixelOption"
+     android:layout_width="match_parent"
+     android:layout_height="20dp"
+     android:src="@drawable/onepixel"
+     android:layout_below="@id/enableDeviceLogging" />
+
+<!-- End checkboxes -->
+
+<!-- DIVIDER -->
+
+<ImageView
+     android:id="@+id/imageView7"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:scaleType="fitXY"
+     android:layout_below="@id/onePixelOption"
+     android:src="@drawable/divider_narrow" />      
+
+<TextView
+     android:id="@+id/testNumberLabel"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/default_test_number"
+     android:layout_below="@id/imageView7"
+     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<ImageView
+     android:id="@+id/onePixelTestLabel"
+     android:layout_width="match_parent"
+     android:layout_height="10dp"
+     android:src="@drawable/onepixel"
+     android:layout_below="@id/testNumberLabel" />
+
+<EditText
+    android:id="@+id/testNumber"
+    android:inputType="phone"
+    android:layout_width="340dp"
+    android:layout_height="30dp"
+    android:layout_below="@id/onePixelTestLabel"
+    android:layout_centerInParent="true"
+    android:background="@color/bgcolour"
+    android:ems="10"
+    android:maxLines="@integer/TtextBoxSingleLines"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:text=""
+    android:textColor="@color/darkblue" >
+    
+    
+    <requestFocus />
+    
+</EditText>
+
+<ImageView
+     android:id="@+id/onePixelTestNo"
+     android:layout_width="match_parent"
+     android:layout_height="20dp"
+     android:src="@drawable/onepixel"
+     android:layout_below="@id/testNumber" />
+
+<ImageView
+    android:id="@+id/imageView6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="fitXY"
+    android:layout_below="@id/onePixelTestNo"
+    android:src="@drawable/divider_narrow" />      
+
+</RelativeLayout>         
+</RelativeLayout>
+
+<!-- Start Footer -->
+
+
+
+<RelativeLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_alignParentBottom="true" >
+ 		
+	<Button
+	    android:id="@+id/saveConfig"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/footer_height"
+	    android:layout_centerInParent="true"
+	    android:layout_gravity="bottom"
+	    android:onClick="saveConfig"
+	    android:scaleType="fitXY"
+	    android:text="@string/saveConfig"
+	    android:textColor="@android:color/white" />
+    
+</RelativeLayout>
+     
+<!-- end Footer -->
+
+</RelativeLayout>
+
+</LinearLayout>
+
+

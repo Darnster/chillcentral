@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+    android:background="@drawable/divider_narrow_light"
+	android:orientation="vertical" >
+
+    <!-- start Header -->	
+  
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp" 
+        android:background="@drawable/divider_narrow_light">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/title_test"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/header_image"
+            android:layout_below="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/divider_narrow" />
+
+	  </RelativeLayout>	
+
+<!-- end Header -->	
+
+        
+   <RelativeLayout
+	    android:id="@+id/test_row"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="top"
+		android:background="@color/midgrey" >
+        
+        <TextView
+               android:id="@+id/testCall"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/enter_phone_number"
+               android:textAppearance="?android:attr/textAppearanceMedium" />
+
+           
+           <EditText
+               android:id="@+id/phone_number"
+               android:layout_width="340dp"
+    		   android:layout_height="30dp"
+               android:layout_centerInParent="true"
+			   android:background="@color/bgcolour"
+			   android:ems="10"
+			   android:maxLines="@integer/TtextBoxSingleLines"
+			   android:paddingBottom="5dp"
+			   android:paddingLeft="10dp"
+			   android:paddingRight="10dp"
+               android:hint="@string/testNumberHint"
+               android:inputType="phone"
+               android:text="" 
+               android:textColor="@color/darkblue"
+               android:layout_below="@id/testCall">
+        
+        </EditText>
+</RelativeLayout>        
+
+<ImageView
+ android:id="@+id/onePixelMaster"
+ android:layout_width="match_parent"
+ android:layout_height="10dp"
+ android:src="@drawable/onepixel"
+ android:background="@color/midgrey" 
+ android:layout_below="@id/test_row"/>
+
+<ImageView
+ android:id="@+id/divider_0"
+ android:layout_width="match_parent"
+ android:layout_height="3dp"
+  android:scaleType="fitXY"
+ android:src="@drawable/divider_narrow_light"
+ android:layout_below="@id/divider_0" />
+
+ <RelativeLayout
+     android:id="@+id/results"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/midgrey"
+     android:visibility="visible" >
+
+
+<!-- feedback title -->
+
+<RelativeLayout
+    android:id="@+id/feedback_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+
+<TextView
+    android:id="@+id/rule_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/matched_rule"
+    android:layout_centerVertical="true"
+    android:shadowDx="3"
+    android:shadowDy="3"
+    android:shadowRadius="5"
+    android:textColor="@color/darkblue"
+    android:textSize="@dimen/text_20dp"
+    />
+
+</RelativeLayout>
+
+<ImageView
+    android:id="@+id/divider_0a"
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:layout_below="@id/feedback_row"
+    android:scaleType="fitXY"
+    android:src="@drawable/divider_narrow_light" />
+
+
+<!-- Group -->
+
+<RelativeLayout
+    android:id="@+id/group_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/feedback_row"
+    android:gravity="top"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+<ImageView
+    android:id="@+id/groups_icon"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:paddingBottom="@dimen/padding_2dp"
+    android:paddingRight="8dp"
+    android:src="@drawable/group_circle" />
+
+<TextView
+    android:id="@+id/rule_group"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/groupLabel"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@id/groups_icon"
+    android:shadowDx="3"
+    android:shadowDy="3"
+    android:shadowRadius="5"
+    android:textColor="@color/darkblue"
+    android:textSize="@dimen/text_20dp"
+    android:width="260dp" />
+
+</RelativeLayout>
+
+<ImageView
+    android:id="@+id/divider_2"
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:layout_below="@id/group_row"
+    android:scaleType="fitXY"
+    android:src="@drawable/divider_narrow_light" />
+
+<!-- Calendar -->
+
+<RelativeLayout
+    android:id="@+id/calendar_row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/group_row"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+<ImageView
+    android:id="@+id/calendar_icon"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:paddingBottom="@dimen/padding_2dp"
+    android:paddingTop="@dimen/padding_2dp"
+    android:paddingRight="8dp"
+    android:src="@drawable/calendar_circle" />
+
+<TextView
+    android:id="@+id/rule_calendar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/CalendarLabel"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@id/calendar_icon"
+    android:gravity="top"
+    android:shadowDx="3"
+    android:shadowDy="3"
+    android:shadowRadius="5"
+    android:textColor="@color/darkblue"
+    android:textSize="@dimen/text_20dp"
+    android:width="260dp" />
+
+</RelativeLayout>
+
+<ImageView
+    android:id="@+id/divider_3"
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:layout_below="@id/calendar_row"
+    android:scaleType="fitXY"
+    android:src="@drawable/divider_narrow_light" />
+
+<!-- Tag -->
+
+<RelativeLayout
+    android:id="@+id/tag_row"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_below="@id/calendar_row"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+<TextView
+    android:id="@+id/tag_view"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:paddingRight="8dp"
+    android:text="@string/tagText"
+    android:textSize="@dimen/text_20dp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/tag_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/tagText"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@id/tag_view"
+    android:shadowDx="3"
+    android:shadowDy="3"
+    android:shadowRadius="5"
+    android:textColor="@color/darkblue"
+    android:textSize="@dimen/text_20dp"
+    android:width="260dp" />
+
+</RelativeLayout>
+<ImageView
+    android:id="@+id/divider_4"
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:layout_below="@id/tag_row"
+    android:scaleType="fitXY"
+    android:src="@drawable/divider_narrow_light" />
+        
+        
+        
+<!-- end Scrolling Body -->
+   
+<!-- Start Footer -->
+		<RelativeLayout
+		    android:id="@+id/footer"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="bottom"
+		    android:layout_alignParentBottom="true" >
+
+   		<Button
+            android:id="@+id/testRule"
+            android:layout_width="match_parent"
+	  		android:layout_height="@dimen/footer_height"
+	   		android:layout_centerInParent="true"
+	   		android:layout_gravity="bottom"
+            android:onClick="testCall"
+            android:scaleType="fitXY"
+	   		android:text="@string/testNumber"
+	    	android:textColor="@android:color/white" />
+		    
+		</RelativeLayout>
+     
+<!-- end Footer -->
+</RelativeLayout>      
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add_rule"
+        android:icon="@drawable/ic_add_rule"
+        android:title="@string/menu_add_rule"
+        android:showAsAction="ifRoom|withText" />
+    
+     <item
+        android:id="@+id/configure"
+        android:title="@string/menu_config"
+        android:showAsAction="ifRoom|withText" />
+    
+     <item
+        android:id="@+id/logs"
+        android:title="@string/menu_view_logs"
+        android:showAsAction="ifRoom|withText" />
+     
+     <item
+        android:id="@+id/test"
+        android:title="@string/menu_test"
+        android:showAsAction="ifRoom|withText" />
+     
+    <item
+        android:id="@+id/tips"
+        android:title="@string/menu_tips_tricks"
+        android:showAsAction="ifRoom|withText" />
+    <!-- Removed as was causing issues <item
+        android:id="@+id/splash"
+        android:title="Play Animation"
+        android:showAsAction="ifRoom|withText" />
+    -->
+    
+    <item
+        android:id="@+id/about"
+        android:title="@string/menu_about"
+        android:showAsAction="ifRoom|withText" />
+   <!--  
+    <item
+        android:id="@+id/changelog"
+        android:title="@string/changelog_full_title"
+        android:showAsAction="ifRoom|withText" />
+    
+    <item
+        android:id="@+id/exit"
+        android:title="@string/menu_exit"
+        android:showAsAction="ifRoom|withText" />
+   -->
+</menu>
+

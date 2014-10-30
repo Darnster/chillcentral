@@ -1,0 +1,38 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <item name="android:background">@color/bgcolour</item>    
+        
+    </style>
+
+    <style name="LightThemeSelector" parent="android:Theme.Holo.Light">
+	    <item name="android:actionBarTabBarStyle">@style/customTabBar</item>
+	    <item name="android:actionBarTabStyle">@style/customTabStyle</item>
+	</style>
+
+    <style name="customTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+	    <item name="android:showDividers">none</item>
+	    <item name="android:measureWithLargestChild">true</item>
+	    <item name="android:background">@drawable/divider_narrow_light</item>
+	    <!-- <item name="android:gravity">center</item>  -->
+	</style>
+	
+    <style name="customTabBar" parent="@android:style/Widget.Holo.ActionBar.TabBar">
+	    <item name="android:showDividers">middle</item>
+	    <item name="android:divider">@drawable/divider_narrow_light</item>
+	    <item name="android:dividerPadding">2dp</item>
+	</style>
+
+    <style name = "ButtonStyle" parent = "android:Theme.Holo">
+       <item name= "android:layout_width">wrap_content</item>
+       <item name= "android:layout_height">@dimen/footer_height</item>
+       <item name= "android:layout_gravity">bottom</item>
+       <item name= "android:textColor">@android:color/white</item>
+        
+    </style>
+    
+    <style name = "MyDialog" parent = "android:Theme.Holo">
+        <item name = "android:background">@color/bgcolour</item>
+        <item name="android:windowNoTitle">true</item>
+        </style>
+</resources>
